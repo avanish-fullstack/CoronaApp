@@ -29,6 +29,7 @@ class App extends Component {
     const { data, country } = this.state;
 
     return <div className={styles.container}>
+      <h5> Thanks for Javascript Mastery</h5> 
       <img className={styles.image} src={coronaImage} alt="Covid-19 image"></img>
       <Cards data={this.state.data} />
       <CountryPicker select={this.handleCountryChange.bind(this)} />
